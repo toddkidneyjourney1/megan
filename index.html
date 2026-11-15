@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Megan Jones — Children's Book Author</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      /* Palette inspired by the book cover */
+      --sky-light: #e6eff6;
+      --sky-mid: #b4cde0;
+      --slate-blue: #38516b;
+      --molasses-dark: #43180c;
+      --molasses-rich: #6b2914;
+      --molasses-amber: #a84b1e;
+      --paper-cream: #fcf8f2;
+      --paper-warm: #f4ebe0;
+      --brick-red: #8c3123;
+      --text-main: #2a1812;
+      --text-muted: #5c463d;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--paper-cream);
+      color: var(--text-main);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, .serif {
+      font-family: 'Fraunces', Georgia, serif;
+      color: var(--molasses-dark);
+    }
+
+    /* Navigation */
+    header {
+      background-color: rgba(252, 248, 242, 0.92);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(107, 41, 20, 0.12);
+    }
+
+    .nav-container {
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .brand {
+      font-family: 'Fraunces', serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--molasses-dark);
+      text-decoration: none;
+      letter-spacing: -0.02em;
+    }
+
+    .brand span {
+      color: var(--molasses-amber);
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--text-main);
+      font-weight: 600;
+      font-size: 0.95rem;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: var(--molasses-amber);
+    }
+
+    .nav-cta {
+      background-color: var(--molasses-dark);
+      color: var(--paper-cream) !important;
+      padding: 0.6rem 1.25rem;
+      border-radius: 999px;
+      transition: transform 0.2s, background-color 0.2s;
+    }
+
+    .nav-cta:hover {
+      background-color: var(--molasses-rich);
+      transform: translateY(-1px);
+    }
+
+    /* Hero Section with Storybook Sky & Molasses Wave */
+    .hero {
+      position: relative;
+      background: linear-gradient(180deg, var(--sky-mid) 0%, var(--sky-light) 70%, var(--paper-cream) 100%);
+      padding: 4.5rem 2rem 7rem;
+      overflow: hidden;
+    }
+
+    .hero-grid {
+      max-width: 1120px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 4rem;
+      align-items: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: rgba(255, 255, 255, 0.75);
+      border: 1px solid rgba(56, 81, 107, 0.25);
+      color: var(--slate-blue);
+      font-weight: 700;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.35rem 0.9rem;
+      border-radius: 999px;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 4.5vw, 3.6rem);
+      line-height: 1.
