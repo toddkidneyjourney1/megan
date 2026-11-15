@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,400&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <style>
     :root {
+      /* Palette inspired by the book cover and molasses theme */
       --sky-light: #e6eff6;
       --sky-mid: #b4cde0;
       --slate-blue: #38516b;
@@ -21,66 +22,31 @@
       --text-main: #2a1812;
       --text-muted: #5c463d;
     }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: var(--paper-cream); color: var(--text-main); line-height: 1.65; overflow-x: hidden; }
-    h1, h2, h3, .serif { font-family: 'Fraunces', Georgia, serif; color: var(--molasses-dark); }
-    
-    header { background-color: rgba(252, 248, 242, 0.92); backdrop-filter: blur(8px); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(107, 41, 20, 0.12); }
-    .nav-container { max-width: 1120px; margin: 0 auto; padding: 1rem 2rem; display: flex; justify-content: space-between; align-items: center; }
-    .brand { font-family: 'Fraunces', serif; font-size: 1.5rem; font-weight: 700; color: var(--molasses-dark); text-decoration: none; }
-    .brand span { color: var(--molasses-amber); font-style: italic; }
-    nav ul { list-style: none; display: flex; gap: 2rem; align-items: center; }
-    nav a { text-decoration: none; color: var(--text-main); font-weight: 600; font-size: 0.95rem; }
-    nav a:hover { color: var(--molasses-amber); }
-    .nav-cta { background-color: var(--molasses-dark); color: var(--paper-cream) !important; padding: 0.6rem 1.25rem; border-radius: 999px; }
 
-    .hero { background: linear-gradient(180deg, var(--sky-mid) 0%, var(--sky-light) 70%, var(--paper-cream) 100%); padding: 4.5rem 2rem 7rem; text-align: center; }
-    .hero-container { max-width: 800px; margin: 0 auto; }
-    .hero h1 { font-size: clamp(2.5rem, 5vw, 3.8rem); margin-bottom: 1rem; }
-    .hero p { font-size: 1.2rem; color: var(--text-muted); margin-bottom: 2rem; }
-    .btn-main { background-color: var(--molasses-amber); color: #fff; padding: 0.8rem 2rem; border-radius: 999px; text-decoration: none; font-weight: 700; display: inline-block; }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
 
-    section { max-width: 900px; margin: 0 auto; padding: 5rem 2rem; text-align: center; }
-    section h2 { font-size: 2.2rem; margin-bottom: 1.5rem; }
-    section p { font-size: 1.1rem; color: var(--text-muted); }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: var(--paper-cream);
+      color: var(--text-main);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
 
-    footer { background-color: var(--molasses-dark); color: var(--paper-cream); text-align: center; padding: 3rem 2rem; margin-top: 4rem; }
-  </style>
-</head>
-<body>
+    h1, h2, h3, .serif {
+      font-family: 'Fraunces', Georgia, serif;
+      color: var(--molasses-dark);
+    }
 
-  <header>
-    <div class="nav-container">
-      <a href="#" class="brand">Megan <span>Jones</span></a>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Books</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#" class="nav-cta">Get the Book</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <div class="hero-container">
-        <h1>Magical Stories for Curious Young Minds</h1>
-        <p>Welcome to the official website of children's book author Megan Jones. Discover enchanting tales that spark imagination, kindness, and wonder.</p>
-        <a href="#" class="btn-main">Explore Books</a>
-      </div>
-    </section>
-
-    <section>
-      <h2>About Megan</h2>
-      <p>Megan Jones writes heartwarming stories inspired by childhood adventures and the beauty of nature. When she isn't writing, she enjoys exploring woodlands, sketching characters, and drinking hot cocoa.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2026 Megan Jones. All rights reserved.</p>
-  </footer>
-
-</body>
-</html>
+    /* Navigation */
+    header {
+      background-color: rgba(252, 248, 242, 0.92);
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(
