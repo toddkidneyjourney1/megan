@@ -129,6 +129,18 @@
       margin-bottom: 2rem; 
     }
 
+    .hero-buttons {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 767px) {
+      .hero-buttons {
+        justify-content: center;
+      }
+    }
+
     /* Book Cover Styling */
     .book-cover-card {
       background: #ffffff;
@@ -165,7 +177,7 @@
     .btn-main { 
       background-color: var(--deep-forest); 
       color: #fff; 
-      padding: 0.9rem 2.2rem; 
+      padding: 0.9rem 2rem; 
       border-radius: 50px; 
       text-decoration: none; 
       font-weight: 700; 
@@ -178,6 +190,24 @@
       background-color: var(--honey); 
       transform: translateY(-3px); 
       box-shadow: 0 12px 24px rgba(244, 162, 97, 0.35);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      color: var(--deep-forest);
+      border: 2px solid var(--deep-forest);
+      padding: 0.9rem 2rem;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 700;
+      display: inline-block;
+      transition: all 0.2s ease;
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--deep-forest);
+      color: #fff;
+      transform: translateY(-3px);
     }
 
     /* About Section */
@@ -207,9 +237,8 @@
       <nav>
         <ul>
           <li><a href="[index.html](https://github.com/copilot)">Home</a></li>
-          <li><a href="[Books](https://toddkidneyjourney1.github.io/megan/#)">Books</a></li>
-          <li><a href="[About](https://toddkidneyjourney1.github.io/megan/#)">About</a></li>
-          <li><a href="[Get the Book](https://toddkidneyjourney1.github.io/megan/#)" class="nav-cta">Get the Book</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#book-reading" class="nav-cta">Book a Reading</a></li>
         </ul>
       </nav>
     </div>
@@ -222,11 +251,13 @@
           <div class="handwriting">Once upon a time...</div>
           <h1>Magical Stories for Curious Young Minds</h1>
           <p>Step into the enchanting world of children's book author Megan Jones. Discover cozy tales filled with wonder, gentle lessons, and woodland adventures.</p>
-          <a href="[Explore the Books 📖](https://toddkidneyjourney1.github.io/megan/#)" class="btn-main">Explore the Books 📖</a>
+          <div class="hero-buttons">
+            <a href="#book-reading" class="btn-main">Book a Reading 📅</a>
+            <a href="#about" class="btn-secondary">About Megan 🌸</a>
+          </div>
         </div>
         <div class="hero-image-wrapper">
           <div class="book-cover-card">
-            <!-- Points to stcky.jpg inside your assets folder -->
             <img src="assets/stcky.jpg" alt="Megan Jones Children's Book Cover" />
             <div class="book-caption">Out Now! ✨</div>
           </div>
@@ -234,7 +265,7 @@
       </div>
     </section>
 
-    <section>
+    <section id="about">
       <h2>Meet the Author</h2>
       <p>Megan Jones believes that every child has a universe of imagination waiting to be unlocked. When she isn't conjuring up rhymes or sketching friendly forest animals, you can find her sipping tea and collecting magical pebbles.</p>
     </section>
